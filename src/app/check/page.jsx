@@ -3,7 +3,7 @@ import GateForm from "@/components/GateForm";
 export const metadata = { title: "Private Beta Access • Curebbear" };
 
 export default function GatePage({ searchParams }) {
-  const nextUrl = searchParams?.next || "/check/review"; // default destination
+  const nextUrl = searchParams?.next || "/check/start"; // default destination
 
   return (
     <main className="min-h-screen bg-[#F5F7FA] px-4 py-10">
