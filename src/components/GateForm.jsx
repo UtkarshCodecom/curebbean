@@ -1,18 +1,15 @@
 "use client";
 import { useState } from "react";
-import { useSearchParams } from "next/navigation";
 
-export default function GateForm() {
-  const sp = useSearchParams();
-  const nextUrl = sp.get("next") || "/check/start";
-
+export default function GateForm({ nextUrl = "/check/review" }) {
   const [pw, setPw] = useState("");
   const [loading, setLoading] = useState(false);
   const [err, setErr] = useState("");
 
   async function onSubmit(e) {
     e.preventDefault();
-    setErr(""); setLoading(true);
+    setErr("");
+    setLoading(true);
     try {
       const res = await fetch("/api/gate", {
         method: "POST",
@@ -21,13 +18,20 @@ export default function GateForm() {
       });
       const data = await res.json().catch(() => ({}));
       if (!res.ok) {
-        setErr(data?.error === "INVALID_PASSWORD" ? "Incorrect password"
-              : data?.error === "PASSWORD_NOT_SET" ? "Server not configured"
-              : "Error, please try again.");
+        setErr(
+          data?.error === "INVALID_PASSWORD"
+            ? "Incorrect password"
+            : data?.error === "PASSWORD_NOT_SET"
+            ? "Server not configured"
+            : "Error, please try again."
+        );
         return;
       }
+      // cookie set -> go to intended page
       location.href = nextUrl;
-    } finally { setLoading(false); }
+    } finally {
+      setLoading(false);
+    }
   }
 
   return (
