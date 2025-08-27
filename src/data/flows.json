@@ -1,0 +1,263 @@
+{
+  "flows": [
+    {
+      "disease": "Fever",
+      "questions": [
+        "Do you also have a rash?",
+        "Are you experiencing joint or muscle pain?",
+        "Have you recently traveled or been exposed to mosquito bites?",
+        "Do you have chills or sweating?",
+        "Have you had the fever for more than 1-2 days?"
+      ],
+      "redFlagText": "Fever > 3 days + rash + joint pain",
+      "redFlagGuidance": "This may need urgent care — seek medical attention if symptoms worsen or new ones appear.",
+      "nonUrgentAdvice": "Stay hydrated, rest, monitor temperature. See doctor if it persists beyond 3 days.",
+      "nonUrgentConditions": [
+        "Viral infection, heat exhaustion, mild flu"
+      ],
+      "summary": "Based on your symptoms, you may be experiencing a mild viral illness or heat-related condition. This is not a diagnosis. Please consult a medical professional if symptoms worsen or persist."
+    },
+    {
+      "disease": "Joint pain",
+      "questions": [
+        "Did the joint pain start recently?",
+        "Is the pain in more than one joint?",
+        "Have you had a recent fever, rash, or mosquito bites?",
+        "Do the joints feel stiff in the morning or after rest?",
+        "Do you have any swelling, redness, or warmth around the joints?"
+      ],
+      "redFlagText": "Severe swelling, high fever, inability to move the joint, or pain post-injury",
+      "redFlagGuidance": "Your symptoms may indicate a serious condition. Please seek urgent medical care immediately.",
+      "nonUrgentAdvice": "",
+      "nonUrgentConditions": [
+        "Chikungunya, dengue-related joint pain, post-viral arthritis, osteoarthritis, overuse injury"
+      ],
+      "summary": ""
+    },
+    {
+      "disease": "Headache",
+      "questions": [
+        "Have you had the headache for more than 1-2 days?",
+        "Is your headache predominantly one-sided (including behind the eyes) rather than generalized?",
+        "Do you feel nauseated or sensitive to light or sound?",
+        "Have you recently spent time in the sun or skipped meals?",
+        "Do you have a history of high blood pressure or migraines?"
+      ],
+      "redFlagText": "Sudden severe headache, vision changes, weakness, confusion, or headache with fever and stiff neck",
+      "redFlagGuidance": "Your symptoms may be serious. Please seek urgent medical care, especially if this is your worst headache or it came on suddenly.",
+      "nonUrgentAdvice": "",
+      "nonUrgentConditions": [
+        "Dehydration, tension headache, migraine, viral illness, mild heat exhaustion"
+      ],
+      "summary": ""
+    },
+    {
+      "disease": "Fatigue",
+      "questions": [
+        "Have you been feeling fatigued for more than a few days?",
+        "Are you sleeping well at night?",
+        "Have you recently been ill (e.g., flu, viral infection)?",
+        "Are you eating regularly and drinking enough fluids?",
+        "Do you have any chronic health conditions (e.g., diabetes, thyroid)?"
+      ],
+      "redFlagText": "Persistent fatigue combined with thirst and frequent urination.",
+      "redFlagGuidance": "May indicate uncontrolled blood sugar. Please see a healthcare provider.",
+      "nonUrgentAdvice": "",
+      "nonUrgentConditions": [
+        "Post-viral fatigue, anemia, poor sleep hygiene, stress, mild dehydration, low vitamin or iron levels"
+      ],
+      "summary": ""
+    },
+    {
+      "disease": "Abdominal Pain",
+      "questions": [
+        "Is the pain located in a specific area (upper, lower, left, or right side)?",
+        "Is the pain constant?",
+        "Have you had any nausea, vomiting, or changes in bowel movements?",
+        "For women: Are you currently on your period or has your period been late?",
+        "Have you eaten any questionable food or had stomach issues recently?"
+      ],
+      "redFlagText": "Severe pain, high fever, persistent vomiting, blood in stool or vomit, or pain localized to lower right side",
+      "redFlagGuidance": "These symptoms could suggest appendicitis or another urgent condition. Please seek medical care immediately.",
+      "nonUrgentAdvice": "",
+      "nonUrgentConditions": [
+        "Indigestion, gastritis, mild food poisoning, menstrual cramps, constipation"
+      ],
+      "summary": ""
+    },
+    {
+      "disease": "Skin rash",
+      "questions": [
+        "Has the rash appeared recently and/or spread?",
+        "Is the rash itchy, painful, or burning?",
+        "Do you also have a fever, joint pain, or eye redness?",
+        "Have you recently used a new product (soap, lotion, detergent)?",
+        "Do you have any known allergies or recent insect bites?"
+      ],
+      "redFlagText": "Rash with high fever, blistering, swelling of lips/eyes, or shortness of breath",
+      "redFlagGuidance": "This may indicate a serious allergic or infectious reaction. Please go to the nearest health facility immediately.",
+      "nonUrgentAdvice": "",
+      "nonUrgentConditions": [
+        "Mild viral rash (Zika, dengue), allergic reaction, contact dermatitis, heat rash, scabies"
+      ],
+      "summary": ""
+    },
+    {
+      "disease": "Vomiting",
+      "questions": [
+        "Have you vomited more than 3 times in the last 24 hours?",
+        "Are you able to keep down any fluids or food?",
+        "Do you also have fever, diarrhea, or abdominal pain?",
+        "Have you eaten outside recently or noticed anyone else sick around you?",
+        "Are you feeling dizzy or light-headed when standing?"
+      ],
+      "redFlagText": "Persistent vomiting (more than 6–8x/day), signs of dehydration, blood in vomit, or confusion",
+      "redFlagGuidance": "These symptoms could signal dehydration or a more serious condition. Please seek urgent medical attention.",
+      "nonUrgentAdvice": "",
+      "nonUrgentConditions": [
+        "Viral gastroenteritis, food poisoning, motion sickness, pregnancy, stress"
+      ],
+      "summary": ""
+    },
+    {
+      "disease": "Diarrhea",
+      "questions": [
+        "Have you had diarrhea more than 3 times in the last 24 hours?",
+        "Is there blood or mucus in the stool?",
+        "Do you have a fever, vomiting, or stomach cramps?",
+        "Have you recently eaten outside or drunk untreated water?",
+        "Are you able to stay hydrated or keep fluids down?"
+      ],
+      "redFlagText": "Bloody stools, high fever, signs of dehydration (dry mouth, dizziness, low urine output)",
+      "redFlagGuidance": "These may be signs of a more serious infection or dehydration. Please see a doctor immediately.",
+      "nonUrgentAdvice": "",
+      "nonUrgentConditions": [
+        "Mild food poisoning, viral gastroenteritis, diet-related bowel upset"
+      ],
+      "summary": "You may have a mild stomach infection or dietary upset. Stay hydrated and monitor. This is not a diagnosis. Seek care if symptoms worsen."
+    },
+    {
+      "disease": "Shortness of breath",
+      "questions": [
+        "Does the shortness of breath occur at rest?",
+        "Do you have any known heart or lung conditions (e.g., asthma)?",
+        "Are you also experiencing chest pain, cough, or fever?",
+        "Is the environment hot or poorly ventilated?",
+        "Do you use any medications or inhalers regularly?"
+      ],
+      "redFlagText": "Sudden breathlessness, chest pain, blue lips, confusion, or fainting",
+      "redFlagGuidance": "These could indicate a serious heart or lung condition. Seek emergency care immediately.",
+      "nonUrgentAdvice": "",
+      "nonUrgentConditions": [
+        "Mild asthma flare-up, anxiety-related breathing, heat exhaustion"
+      ],
+      "summary": "Symptoms may reflect mild breathing issue or heat exhaustion. Seek medical help if symptoms escalate. This is not a diagnosis."
+    },
+    {
+      "disease": "Muscle ache",
+      "questions": [
+        "Have you done any physical activity recently?",
+        "Do you have a fever, chills, or joint pain as well?",
+        "Are you staying hydrated in the heat?",
+        "Is the pain localized to one area?",
+        "Does the pain improve with rest or gentle movement?"
+      ],
+      "redFlagText": "Muscle pain with weakness, swelling, high fever, dark urine",
+      "redFlagGuidance": "These could be signs of serious infection or muscle breakdown. Seek urgent care.",
+      "nonUrgentAdvice": "",
+      "nonUrgentConditions": [
+        "Viral infection, heat-related fatigue, overexertion, minor strain"
+      ],
+      "summary": "Muscle pain may be due to recent exertion, viral illness, or dehydration. Monitor at home. This is not a diagnosis. Consult a doctor if it worsens."
+    },
+    {
+      "disease": "Eye Redness",
+      "questions": [
+        "Did the redness start suddenly?",
+        "Is only one eye affected?",
+        "Do you have any discharge (pus, tears)?",
+        "Have you recently had flu-like symptoms or fever?",
+        "Is your vision blurred or affected?"
+      ],
+      "redFlagText": "Vision changes or strong eye pain",
+      "redFlagGuidance": "Seek immediate care from a medical provider or eye specialist",
+      "nonUrgentAdvice": "Apply cool compresses, wash hands often, avoid eye rubbing; monitor for worsening symptoms",
+      "nonUrgentConditions": [
+        "Allergic conjunctivitis, viral conjunctivitis, dry eyes, irritation from dust"
+      ],
+      "summary": "Your symptoms may be due to a mild eye irritation or conjunctivitis. Avoid touching your eyes and monitor your symptoms. If pain worsens or vision changes, consult a doctor. This is not a diagnosis."
+    },
+    {
+      "disease": "Itching",
+      "questions": [
+        "Is the itching all over your body?",
+        "Is there a visible rash or skin change?",
+        "Have you used any new soaps, creams, or eaten anything unusual?",
+        "Did you recently get bitten by insects or spend time outdoors?",
+        "Is the itching worse at night?"
+      ],
+      "redFlagText": "Intense itching with yellowing eyes/skin or swelling",
+      "redFlagGuidance": "Seek prompt care to rule out liver issues or allergic reaction",
+      "nonUrgentAdvice": "Use fragrance-free moisturizer, avoid scratching, monitor for rash or swelling",
+      "nonUrgentConditions": [
+        "Bug bites, eczema, contact dermatitis, fungal infections"
+      ],
+      "summary": "Mild itching is common and often resolves on its own. Try moisturizing and avoid triggers. Seek care if symptoms worsen. This is not a diagnosis."
+    },
+    {
+      "disease": "Persistent cough",
+      "questions": [
+        "Have you had the cough for more than 2 weeks?",
+        "Are you coughing up mucus (of any color)?",
+        "Do you have chest pain or shortness of breath?",
+        "Have you had a recent cold or fever?",
+        "Are you exposed to smoke or dust regularly?"
+      ],
+      "redFlagText": "Cough lasting >2 weeks with blood or shortness of breath",
+      "redFlagGuidance": "Seek medical attention for further testing or chest imaging",
+      "nonUrgentAdvice": "Stay hydrated, use lozenges or warm teas, avoid smoke; monitor for worsening symptoms",
+      "nonUrgentConditions": [
+        "Allergies, post-viral irritation, mild bronchitis, acid reflux"
+      ],
+      "summary": "A cough can linger after colds or irritation. Stay hydrated and monitor. If symptoms persist or worsen, consult a doctor. This is not a diagnosis"
+    },
+    {
+      "disease": "Frequent Urination",
+      "questions": [
+        "Do you urinate more than 8 times a day?",
+        "Are you waking up during the night to urinate?",
+        "Have you recently increased your fluid intake?",
+        "Do you drink a lot of sugary drinks like soda, juice, or sweetened tea?",
+        "Do you also feel thirsty often?"
+      ],
+      "redFlagText": "Urinating more than 8 times a day with persistent thirst and fatigue.",
+      "redFlagGuidance": "Seek immediate medical evaluation to rule out uncontrolled diabetes or a urinary tract infection.",
+      "nonUrgentAdvice": "Track your fluid intake and bathroom visits. Avoid sugary drinks and monitor for other symptoms like fatigue or weight loss.",
+      "nonUrgentConditions": [
+        "Early type 2 diabetes",
+        "Urinary tract irritation",
+        "High fluid consumption"
+      ],
+      "summary": "You’re experiencing frequent urination, which may be linked to early diabetes or increased sugar intake. Please consider a blood sugar screening, especially if you also feel thirsty or tired."
+    },
+    {
+      "disease": "Excessive Thirst",
+      "questions": [
+        "Are you drinking more than 8 glasses of water or fluids daily?",
+        "Do you sweat a lot during the day?",
+        "Are you also urinating more frequently?",
+        "Do you feel weak or tired?",
+        "Have you experienced recent weight loss?"
+      ],
+      "redFlagText": "Excessive thirst with frequent urination and sudden weight loss.",
+      "redFlagGuidance": "Urgent screening for diabetes is recommended. Visit a health center for a glucose test.",
+      "nonUrgentAdvice": "Stay hydrated with water, avoid sweetened beverages, and track how long the thirst persists.",
+      "nonUrgentConditions": [
+        "Mild dehydration",
+        "Increased salt or sugar intake",
+        "Dry weather effects"
+      ],
+      "summary": "Persistent thirst, especially if paired with frequent urination or fatigue, may be an early warning of diabetes. A blood sugar test is strongly advised."
+    }
+  ]
+}
