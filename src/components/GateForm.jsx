@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 
-export default function GateForm({ nextUrl = "/check/review" }) {
+export default function GateForm({ nextUrl = "/check/start" }) {
   const [pw, setPw] = useState("");
   const [loading, setLoading] = useState(false);
   const [err, setErr] = useState("");
